@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd"> 
+
+<tiles-definitions>
+
+	<!-- Menu tiles tag Starts -->
+	<definition name="home" template="/layoutmanager.jsp"> 
+		<put-attribute name="title" value="Welcome DMI HOME Page"/> 
+		<put-attribute name="body" value="/home.jsp"/> 
+	</definition>
+	<definition name="locator" template="/layoutmanager.jsp"> 
+		<put-attribute name="title" value="Products Locator"/> 
+		<put-attribute name="body" value="/locator.jsp"/> 
+	</definition>	
+	<definition name="products" template="/layoutmanager.jsp"> 
+		<put-attribute name="title" value="Products Home"/> 
+		<put-attribute name="body" value="/products.jsp"/> 
+	</definition>	
+	<definition name="powder" template="/layoutmanager.jsp"> 
+		<put-attribute name="title" value="Products Powder"/> 
+		<put-attribute name="body" value="/powder.jsp"/> 
+	</definition>	
+	<definition name="faq" template="/layoutmanager.jsp"> 
+		<put-attribute name="title" value="FAQ Page"/> 
+		<put-attribute name="body" value="/faq.jsp"/> 
+	</definition>	
+	<definition name="signup" template="/layoutmanager.jsp"> 
+		<put-attribute name="title" value="Sign Up"/> 
+		<put-attribute name="body" value="/signup.jsp"/> 
+	</definition>
+	<!-- Menu tiles tag Ends -->
+	
+	<!-- Common tiles tag Starts -->
+	<definition name="slider" template="/imgslider.jsp"> 
+		<put-attribute name="body" value="/imgslider.jsp"/> 
+	</definition>
+	<definition name="ibox" template="/imagebox.jsp"> 
+		<put-attribute name="body" value="/imagebox.jsp"/> 
+	</definition>
+	<definition name="ibelt" template="/imagebelt.jsp"> 
+		<put-attribute name="body" value="/imagebelt.jsp"/> 
+	</definition>
+	<definition name="text" template="/textstr.jsp"> 
+		<put-attribute name="body" value="/textstr.jsp"/> 
+	</definition>
+	<definition name="steps" template="/steps.jsp"> 
+		<put-attribute name="body" value="/steps.jsp"/> 
+	</definition>
+	<definition name="sub_page_text" template="/sub_page_text.jsp">
+		<put-attribute name="body" value="/sub_page_text.jsp"/>
+	</definition>
+	<!-- Common tiles tag Ends -->
+	
+	<!-- Recipes tiles tag Starts -->
+	<definition name="recipes" template="/layoutmanager.jsp"> 
+		<put-attribute name="title" value="Recipes"/> 
+		<put-attribute name="body" value="/recipes_home.jsp"/> 
+	</definition>
+	<definition name="recipe_menu" template="/layoutmanager.jsp"> 
+		<put-attribute name="title" value="Recipe Menu"/> 
+		<put-attribute name="body" value="/recipe_menu.jsp"/> 
+	</definition>
+	<definition name="recipe_tab" template="/recipe_tab.jsp">
+		<put-attribute name="body" value="/recipe_tab.jsp"/>
+	</definition>
+	<definition name="recipe_img_box" template="/recipeimgbox.jsp"> 
+		<put-attribute name="body" value="/recipeimgbox.jsp"/> 
+	</definition>
+	<definition name="recipe_slider" template="/recipe_slider.jsp"> 
+		<put-attribute name="body" value="/recipe_slider.jsp"/> 
+	</definition>
+	<definition name="recipe_text" template="/recipe_text.jsp"> 
+		<put-attribute name="body" value="/recipe_text.jsp"/> 
+	</definition>
+	<!-- Recipes tiles tag Ends -->
+	
+	<!-- Footer tiles tag Starts -->
+	<definition name="privacypolicy" template="/layoutmanager.jsp"> 
+		<put-attribute name="title" value="Privacy Policy"/> 
+		<put-attribute name="body" value="/privacypolicy.jsp"/> 
+	</definition>
+	<definition name="contact-us" template="/layoutmanager.jsp"> 
+		<put-attribute name="title" value="Contact Us"/> 
+		<put-attribute name="body" value="/contact-us.jsp"/> 
+	</definition>
+	<definition name="sitemap" template="/layoutmanager.jsp"> 
+		<put-attribute name="title" value="Site Map"/> 
+		<put-attribute name="body" value="/sitemap.jsp"/> 
+	</definition>
+	<definition name="termsofuse" template="/layoutmanager.jsp"> 
+		<put-attribute name="title" value="Terms of Use"/> 
+		<put-attribute name="body" value="/termsofuse.jsp"/> 
+	</definition>
+	<!-- Footer tiles tag Ends -->
+			
+	<!-- tag sample for error page 
+	<definition name="faq-error" template="/layoutmanager.jsp"> 
+	<put-attribute name="title" value="Faq Error"/> 
+	<put-attribute name="body" value="/faq-error.jsp"/> 
+	</definition>
+	 --> 
+   
+</tiles-definitions>

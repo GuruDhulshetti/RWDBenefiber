@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+<package name="default" extends="tiles-default,hibernate-default" >
+    
+	<!-- Menu Actions Starts -->
+	    <action name="home" method="list" class="com.rwd.dmi.web.HomeAction">
+			<result name="success" type="tiles">home</result>
+		</action>
+		<action name="locator" class="com.rwd.dmi.web.LocatorAction">
+			<result name="success" type="tiles">locator</result>
+		</action>
+		<action name="productshome" class="com.rwd.dmi.web.RecipesAction">
+			<result name="success" type="tiles">recipe_menu</result>
+		</action>
+		<action name="powder" class="com.rwd.dmi.web.ProductPowderAction">
+			<result name="success" type="tiles">powder</result>
+		</action>
+		<action name="faq" class="com.rwd.dmi.web.FaqAction">
+			<result name="success" type="tiles">faq</result>
+		</action>
+	<!-- Menu Actions Ends -->
+	
+	<!-- Home Actions Starts -->
+		<action name="imgslider" method="list" class="com.rwd.dmi.web.SliderAction">
+			<result name="success" type="tiles">slider</result>  
+		</action>		
+		<action name="text" method="sub_page_text" class="com.rwd.dmi.web.TextAction">
+			<result name="success" type="tiles">text</result>  
+		</action>	
+		<action name="ibox" method="boxlist" class="com.rwd.dmi.web.SliderAction">
+			<result name="success" type="tiles">ibox</result>  
+		</action>
+		<action name="ibelt" method="beltlist" class="com.rwd.dmi.web.SliderAction">
+			<result name="success" type="tiles">ibelt</result>  
+		</action>
+		<action name="steps" method="steps" class="com.rwd.dmi.web.TextAction">
+			<result name="success" type="tiles">steps</result>  
+		</action>
+		<action name="sub_page_text" method="sub_page_text" class="com.rwd.dmi.web.TextAction">
+			<result name="success" type="tiles">sub_page_text</result>
+		</action>
+	<!-- Home Actions Ends -->
+	
+	<!-- Fiber Health Actions Ends -->
+		<action name="fiber_your_health" class="com.rwd.dmi.web.RecipesAction">
+			<result name="success" type="tiles">recipe_menu</result>
+		</action>
+		<action name="fiber-rich-diet" class="com.rwd.dmi.web.RecipesAction">
+			<result name="success" type="tiles">recipe_menu</result>
+		</action>
+		<action name="fiber-iq" class="com.rwd.dmi.web.RecipesAction">
+			<result name="success" type="tiles">recipe_menu</result>
+		</action>					
+	<!-- Fiber Health Starts -->
+	
+	<!-- Recipes Actions Starts -->
+		<action name="recipes" class="com.rwd.dmi.web.RecipesAction">
+			<result name="success" type="tiles">recipes</result>
+		</action>
+		<action name="recipe_menu" class="com.rwd.dmi.web.RecipesAction">
+			<result name="success" type="tiles">recipe_menu</result>
+		</action>
+		<action name="recipe_slider" method="list" class="com.rwd.dmi.web.SliderAction">
+			<result name="success" type="tiles">recipe_slider</result>  
+		</action>	
+		<action name="recipe_tab" method="sub_page_tab_text" class="com.rwd.dmi.web.TextAction">
+			<result name="success" type="tiles">recipe_tab</result>
+		</action>	
+		<action name="recipe_img_box" method="recipe_img_box" class="com.rwd.dmi.web.SliderAction">
+			<result name="success" type="tiles">recipe_img_box</result>  
+		</action>
+		<action name="recipe_text" method="list" class="com.rwd.dmi.web.TextAction">
+			<result name="success" type="tiles">recipe_text</result>  
+		</action>
+	<!-- Recipes Actions Ends -->
+	
+	<!-- Footer Link Actions Starts -->
+		<action name="privacypolicy" class="com.rwd.dmi.web.PrivacyPolicyAction">
+			<result name="success" type="tiles">privacypolicy</result>
+		</action>
+		<action name="contact-us" class="com.rwd.dmi.web.ContactUsAction">
+			<result name="success" type="tiles">contact-us</result>
+		</action>	
+		<action name="sitemap" class="com.rwd.dmi.web.SiteMapAction">
+			<result name="success" type="tiles">sitemap</result>
+		</action>
+		<action name="signup" class="com.rwd.dmi.web.SignUpAction">
+			<result name="success" type="tiles">signup</result>
+		</action>
+		<action name="termsofuse" class="com.rwd.dmi.web.TermsOfUseAction">
+			<result name="success" type="tiles">termsofuse</result>
+		</action>
+	<!-- Footer Link Actions Ends -->
+	
+</package>
+</struts>    
